@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env*
+.vercel/
+output/
+qa/
+.hallmark/
+.taste-skill/
+*.zip

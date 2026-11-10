@@ -1,0 +1,24 @@
+:root {
+  --space-5:20px; --space-7:28px; --space-8:32px; --space-12:48px; --space-14:56px;
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
+  --text-xs: 0.75rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.2rem; --text-xl: 1.44rem; --text-2xl: 1.728rem; --text-3xl: 2.074rem;
+  --text-display-s: 1.44rem; --text-display: 1.728rem; --text-section: 1.2rem; --text-title: 1rem; --text-lead: 1rem;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --ease-in: cubic-bezier(0.7, 0, 0.84, 0); --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 420ms;
+  --color-error: oklch(52% 0.19 27); --color-success: oklch(50% 0.12 150);
+  --container: 1440px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
+  --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500; --z-tooltip: 600;
+  --color-paper: #ffffff; --color-paper-2: #eff2ee; --color-paper-3: #e2e9e1;
+  --color-ink: #263c49; --color-ink-2: #536568; --color-muted: #53655d;
+  --color-rule: #dbe3dc; --color-rule-light: #e9eee9; --color-control: #748474;
+  --color-accent: #335d4a; --color-accent-hover: #234535; --color-accent-soft: #e3eddf;
+  --color-accent-ink: #ffffff; --color-focus: #467d61; --color-quiet: transparent;
+  --color-warning: #85551f; --color-warning-soft: #fbf3e7; --color-overlay: #17291f66;
+  --color-frame: #263c49; --color-frame-ink: #f4f7f0; --color-frame-muted: #c3d3c6;
+  --color-sage: #dce7d6; --color-sage-light: #f5f8f2; --color-apricot: #f3d9be; --color-apricot-light: #fcf2e6;
+  --color-apricot-ink: #6b482b; --color-workspace: #e9eeea;
+  --shadow-document: 0 10px 32px #263c490a, 0 2px 6px #263c4905;
+  --font-display: var(--font-body); --font-body: "ManualFont", "Malgun Gothic", system-ui, sans-serif; --font-outlier: var(--font-body);
+  --radius-card: 4px; --radius-pill: 999px; --rule-hair: 1px; --shadow-card: none;
+  --tracking-display: -0.02em;
+}

@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readBackup} from '../src/backup.mjs';import {blank} from '../src/model.mjs';
+test('restores valid backup and rejects malformed categories',()=>{const d=blank();assert.equal(readBackup(JSON.stringify({format:'gyeol-backup-1',document:d})).id,d.id);d.categories=[{id:'bad',title:'bad',items:null}];assert.throws(()=>readBackup(JSON.stringify({format:'gyeol-backup-1',document:d})));});

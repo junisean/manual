@@ -1,0 +1,3 @@
+const open=()=>new Promise((resolve,reject)=>{const r=indexedDB.open('gyeol-studio',1);r.onupgradeneeded=()=>r.result.createObjectStore('work');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});
+export async function load(){const db=await open();return new Promise((resolve,reject)=>{const tx=db.transaction('work');const r=tx.objectStore('work').get('current');r.onsuccess=()=>{resolve(r.result);db.close();};r.onerror=()=>reject(r.error);});}
+export async function save(doc){const db=await open();return new Promise((resolve,reject)=>{const tx=db.transaction('work','readwrite');tx.objectStore('work').put(doc,'current');tx.oncomplete=()=>{db.close();resolve();};tx.onerror=()=>reject(tx.error);});}
